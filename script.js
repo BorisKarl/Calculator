@@ -47,7 +47,7 @@ function allClear() {
     secondDisplay.textContent = "";
     firstOperand = "";
     secondOperand = "";
-    operatorMethod = null;
+    operatorMethod = "";
 }
 
 function appendNumber(number) {
@@ -67,7 +67,7 @@ function resetDisplay() {
 }
 
 function getOperator(operator) {
-    if(operatorMethod !== null) {
+    if(operatorMethod !== "") {
         toOperate()
     }else{
         //store first operand
@@ -89,7 +89,7 @@ function toOperate() {
     firstDisplay.textContent = operate(operatorMethod, firstOperand, secondOperand)
     //keep track of calculation
     secondDisplay.textContent = `${firstOperand} ${operatorMethod} ${secondOperand} = `;
-    operatorMethod = null;
+    operatorMethod = "";
 }
 
 function operate(operator, a, b) {
