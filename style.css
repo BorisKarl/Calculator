@@ -1,28 +1,35 @@
 body {
     padding: 0;
     margin: 0;
-    background: yellow;
 }
 
 .container {
+    color: rgba(0,0,0, .75);
     display: grid;
     justify-content: center;
     align-content: center; /*diesen Befehl unbedingt merken!*/
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(4, 100px);
+    background: rgb(191, 218, 97);
+
 }
+
 
 .container > button {
 cursor: pointer;
 font-size: 2rem;
-border: 1px solid white;
 outline: none;
 background-color: thistle;
 }
 
-.container > button:hover {
+.container > button[data-number]:hover {
     color: tomato;
+    background-color: wheat;
+}
+
+.container > button[data-operator]:hover {
+    color: rgb(230, 62, 140);
     background-color: wheat;
 }
 
@@ -30,9 +37,18 @@ background-color: thistle;
     grid-column: span 2;
 }
 
-#divide, #multiply, #equal {
-height: 100px;
+button {
+    border-radius: 15px;
+    color:rgb(48, 93, 184)
 }
+
+button[data-operator] {
+    color:rgb(19, 19, 216);
+    background-color: burlywood;
+    height: 100px;
+}
+
+
 
 .Bildschirm {
     grid-column: 1 / -1;
@@ -46,6 +62,8 @@ height: 100px;
     word-wrap: break-word;
     word-break: break-all;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    
 }
 .Bildschirm .vorherigerScreen {
     color: thistle;
