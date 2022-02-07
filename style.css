@@ -3,19 +3,34 @@ body {
     margin: 0;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
 .container {
     color: rgba(0,0,0, .75);
     display: grid;
     justify-content: center;
-    align-content: center; /*diesen Befehl unbedingt merken!*/
-    min-height: 100vh;
+    align-content: center;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(4, 100px);
-    background: rgb(191, 218, 97);
-
+    grid-template-rows: minmax(100px, auto) repeat(5, 95px);
+    gap: 10px;
 }
 
-
+.background {
+  width: 430px;
+  border: 2px, black, solid;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: grey;
+  height: 680px;
+}
 .container > button {
 cursor: pointer;
 font-size: 2rem;
@@ -45,7 +60,6 @@ button {
 button[data-operator] {
     color:rgb(19, 19, 216);
     background-color: burlywood;
-    height: 100px;
 }
 
 
@@ -59,11 +73,12 @@ button[data-operator] {
     justify-content: space-between;
     align-items: flex-end;
     padding: 10px;
+    margin-bottom: 10px;
     word-wrap: break-word;
     word-break: break-all;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 20px;
-    
+    height: 6.5rem;
 }
 .Bildschirm .vorherigerScreen {
     color: thistle;

@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="main">
+    <div class="background">
     <div class="container">
         <div class="Bildschirm" id="Bildschirm">   
          <div class="vorherigerScreen" data-previous-operand id="vorherigerScreen"></div>
          <div class="aktuellerScreen" data-current-operand id="aktuellerScreen"></div>
        </div>  
      <button type="button" data-operator class="span-two" id ="clear">AC</button>
-     <button type="button" data-operator id ="delete">DEL</button>
+     <button type="button" data-delete id ="delete">DEL</button>
      <button type="button" data-operator id ="divide">÷</button>
 
      <button type="button" data-number id ="7" class="n">7</button>
      <button type="button" data-number id ="8" class="n">8</button>
      <button type="button" data-number id ="9" class="n">9</button>
-     <button type="button" data-operator id ="multiply">*</button>
+     <button type="button" data-operator id ="multiply">x</button>
 
      <button type="button" data-number id ="4" class="n">4</button>
      <button type="button" data-number id ="5" class="n">5</button>
@@ -33,10 +35,11 @@
      <button type="button" data-number id ="3" class="n">3</button>
      <button type="button" data-operator id ="add">+</button>
      <button type="button" data-number id ="0" class="n">0</button>
-     <button type="button" data-operator id ="point">.</button>
-     <button type="button" data-operator class="span-two" id ="equal">=</button>
+     <button type="button" data-point id ="point">.</button>
+     <button type="button" data-equal class="span-two" id ="equal">=</button>
     </div>
- 
+</div>
+</div>
 </body>
 
 </html>
